@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
 def calculate_rmse(y_true, y_pred):
     """
     Calculate Root Mean Square Error
-
-    TODO: Implement this function
     """
     mse = mean_squared_error(y_true, y_pred)
     rmse = mse ** 0.5
@@ -16,8 +14,6 @@ def calculate_rmse(y_true, y_pred):
 def calculate_mae(y_true, y_pred):
     """
     Calculate Mean Absolute Error
-
-    TODO: Implement this function
     """
     mae = mean_absolute_error(y_true, y_pred)
     return mae
@@ -26,8 +22,6 @@ def calculate_mae(y_true, y_pred):
 def calculate_r2(y_true, y_pred):
     """
     Calculate R² Score
-
-    TODO: Implement this function
     """
     r2 = r2_score(y_true, y_pred)
     return r2
@@ -36,8 +30,6 @@ def calculate_r2(y_true, y_pred):
 def evaluate_model(model, X_test, y_test):
     """
     Evaluate a trained model and return all metrics
-
-    TODO: Implement this function
     Should return: {'rmse': value, 'mae': value, 'r2': value}
     """
     y_pred = model.predict(X_test)
@@ -52,8 +44,6 @@ def evaluate_model(model, X_test, y_test):
 def compare_models(results_dict):
     """
     Compare multiple models with visualization
-
-    TODO: Implement this function
     Input format: {'Model Name': {'rmse': x, 'mae': y, 'r2': z}}
     """
     names = list(results_dict.keys())
